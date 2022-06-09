@@ -1,0 +1,65 @@
+/*Media queries donde aplico la adptabilidad para pantallas de 600px y le doy una aperiencia diferente a la pagina cuando esta en modo mobile*/
+ 
+
+@media only screen and (max-width: 600px){
+
+    header{
+        background-color:$verde;
+        width: 100%;
+        clear: both;
+        display: table;
+
+ /*Se usaron Variables */ 
+
+            & .menu.menu li:hover {
+        background:$yellow; }
+    }
+
+ /*Se usaron Variables */ 
+
+  .contenedorp{
+      gap: 20px;
+
+      #img{
+        width: 400px;
+        height: auto;
+        border:  10px $verde solid;
+        background-color:$verde;
+                       } 
+
+      #letras{
+        width: 300px;
+        height: auto;
+        font-size: 22px;
+        border: 3px $verde solid;
+        background-color:$verde;
+   
+        &:hover{
+           background-color:$yellow; 
+           transform: skew(10deg);
+           border-radius: 0%;
+       }
+       
+                        }
+                                       }  
+
+
+footer{
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    color:rgb(0, 158, 55) ;
+
+      
+  h5{
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 0px;
+    text-align: center;
+    color:rgb(0, 158, 55) ;
+                                }
+
+}
+
+
+}
